@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.paruluniversity.pica.ui.HomeFragment"
+        android:label="FITCS"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_pumisFragment"
+            app:destination="@id/pumisFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_academicFragment"
+            app:destination="@id/academicFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_self"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_timeTableFragment"
+            app:destination="@id/timeTableFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/academicFragment"
+        android:name="com.paruluniversity.pica.ui.AcademicFragment"
+        android:label="Academic"
+        tools:layout="@layout/fragment_academic">
+        <action
+            android:id="@+id/action_academicFragment_to_bcaMenuFragment"
+            app:destination="@id/bcaMenuFragment" />
+        <action
+            android:id="@+id/action_academicFragment_to_imcaMenuFragment"
+            app:destination="@id/imcaMenuFragment" />
+        <action
+            android:id="@+id/action_academicFragment_to_mcaMenuFragment"
+            app:destination="@id/mcaMenuFragment" />
+        <action
+            android:id="@+id/action_academicFragment_to_bscMenuFragment"
+            app:destination="@id/bscmenu" />
+        <action
+            android:id="@+id/action_academicFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pumisFragment"
+        android:name="com.paruluniversity.pica.ui.PumisFragment"
+        android:label="PUMIS"
+        tools:layout="@layout/fragment_pumis" >
+        <action
+            android:id="@+id/action_pumisFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.paruluniversity.pica.ui.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.paruluniversity.pica.ui.PrivacyFragment"
+        android:label="Privacy Policy"
+        tools:layout="@layout/fragment_privacy" >
+        <action
+            android:id="@+id/action_privacyFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bcaMenuFragment"
+        android:name="com.paruluniversity.pica.ui.BcaMenuFragment"
+        android:label="BCA">
+        <action
+            android:id="@+id/action_bcaMenuFragment_to_academicFragment2"
+            app:destination="@id/academicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imcaMenuFragment"
+        android:name="com.paruluniversity.pica.ui.ImcaMenuFragment"
+        android:label="IMCA">
+        <action
+            android:id="@+id/action_imcaMenuFragment_to_academicFragment"
+            app:destination="@id/academicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mcaMenuFragment"
+        android:name="com.paruluniversity.pica.ui.McaMenuFragment"
+        android:label="McaMenuFragment" >
+        <action
+            android:id="@+id/action_mcaMenuFragment_to_academicFragment"
+            app:destination="@id/academicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bscmenu"
+        android:name="com.paruluniversity.pica.ui.BcaMenuFragment"
+        android:label="BscMenuFragment">
+        <action
+            android:id="@+id/action_bscMenuFragment_to_academicFragment"
+            app:destination="@id/academicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeTableFragment"
+        android:name="com.paruluniversity.pica.ui.TimeTableFragment"
+        android:label="TIME TABLE"
+        tools:layout="@layout/fragment_time_table">
+        <action
+            android:id="@+id/action_timeTableFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

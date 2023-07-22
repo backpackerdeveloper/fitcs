@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_background" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FITCS"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_130sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/imcanotesbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background1">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/circle_back"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView44"
+                            android:layout_width="56dp"
+                            android:layout_height="49dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/notes" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Notes"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+                        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/imcapaperbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background2">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout22"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/circle_back"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/notes" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Previous Paper"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/constraintLayout22"
+                        app:layout_constraintStart_toStartOf="@+id/constraintLayout22"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout22" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/imcasyllabusbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background3">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout32"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/circle_back"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="56dp"
+                            android:layout_height="49dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/notes" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Syllabus"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/constraintLayout32"
+                        app:layout_constraintStart_toStartOf="@+id/constraintLayout32"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout32" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/imcalabbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_background4">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout42"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/circle_back"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView444"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/notes" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="Practical"
+                        android:textColor="#ffffff"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/constraintLayout42"
+                        app:layout_constraintStart_toStartOf="@+id/constraintLayout42"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout42" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

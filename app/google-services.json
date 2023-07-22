@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "708254179438",
+    "project_id": "fitcs-50af9",
+    "storage_bucket": "fitcs-50af9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708254179438:android:02d9bd9bbb9b77cac5867f",
+        "android_client_info": {
+          "package_name": "com.paruluniversity.pica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708254179438-52snlg5ide52q1banb1c587r7ncm1mm5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3Aitf_OLkPtb6IWynsWCyRmYPIOU89yU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708254179438-52snlg5ide52q1banb1c587r7ncm1mm5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

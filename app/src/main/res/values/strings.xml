@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PICA</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello home fragment</string>
+    <string name="home">Home</string>
+    <string name="pumis">PUMIS</string>
+    <string name="academic">Academic</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+</resources>
